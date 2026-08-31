@@ -1,9 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import router from './handleRoute'
+import { RouterProvider } from 'react-router-dom'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <div><h2>Hello from frontend</h2></div>
+  
+  <RouterProvider router={router}/>
+  
   </StrictMode>,
 )
